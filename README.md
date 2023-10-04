@@ -1,1 +1,2 @@
-# Template empty project for Angular
+# Travel agency manager with Angular 
+
