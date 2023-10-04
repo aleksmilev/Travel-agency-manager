@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* global variables that you can use :) */
+:root {
+  --primary-color: #182b6d;
+  --action-color: #ff5548;
+  --tetriary-color: #a38cc6;
+  --background-white: #f7f9fa;
+  --primary-font: "Roboto", "Helvetica Neue", Helvetica, Arial;
+}
+
+.btn-primary {
+  background-color: rgb(51, 146, 255);
+  padding: 15px 0px;
+}
+.btn-primary[disabled] {
+  background-color: rgb(184, 183, 183);
+  border: rgb(184, 183, 183);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
