@@ -5,8 +5,6 @@ import { AuthGuardAdmin } from '../auth/auth-admin.guard';
 import { AuthGuardUser } from '../auth/auth-user.guard';
 import { AuthGuardClient } from '../auth/auth-client.guard';
 
-const auth = true;
-
 const Routing: Routes = [
   {
     path: 'test',
