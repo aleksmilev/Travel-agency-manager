@@ -3,22 +3,10 @@
 
 /* global variables that you can use :) */
 :root {
-  --primary-color: #182b6d;
-  --action-color: #ff5548;
-  --tetriary-color: #a38cc6;
-  --background-white: #f7f9fa;
+  --primary-color: #2A324B;
+  --secondary-color: #767B91;
+  --action-color: #F7C59F;
+  --tetriary-color: #C7CCDB;
+  --background-white: #E1E5EE;
   --primary-font: "Roboto", "Helvetica Neue", Helvetica, Arial;
-}
-
-.btn-primary {
-  background-color: rgb(51, 146, 255);
-  padding: 15px 0px;
-}
-.btn-primary[disabled] {
-  background-color: rgb(184, 183, 183);
-  border: rgb(184, 183, 183);
-}
-
-.form-control:focus {
-  box-shadow: none;
 }

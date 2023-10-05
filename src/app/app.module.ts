@@ -13,7 +13,6 @@ import { CKEditorModule} from "ng2-ckeditor";
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { EmptyPageComponent } from './pages/empty-page/empty-page.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

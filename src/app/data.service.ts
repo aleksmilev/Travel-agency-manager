@@ -6,8 +6,7 @@ import { Observable, catchError } from "rxjs";
   providedIn: 'root'
 })
 export class DataService{
-
-  private REST_API_SERVER = "https://test-api/";
+  private REST_API_SERVER = "http://localhost:80/";
 
   constructor(private http: HttpClient) {}
   
