@@ -6,11 +6,16 @@ import { AuthGuardUser } from '../auth/auth-user.guard';
 import { AuthGuardClient } from '../auth/auth-client.guard';
 
 const Routing: Routes = [
+  // {
+  //   path: 'test',
+  //   component: EmptyPageComponent,
+  //   canActivate: [AuthGuardAdmin]
+  // },
   {
-    path: 'test',
+    path: '',
     component: EmptyPageComponent,
-    canActivate: [AuthGuardAdmin]
   },
+
   {
     path: '**',
     redirectTo: '',
