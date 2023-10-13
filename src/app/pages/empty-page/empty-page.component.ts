@@ -9,6 +9,7 @@ import { EncryptionService } from 'src/app/services/encryption.service';
 })
 export class EmptyPageComponent implements OnInit {
 
+	data: any = null;
 	hashed_data: any = null;
 	normal_data: any = null;
 
@@ -18,31 +19,29 @@ export class EmptyPageComponent implements OnInit {
 		) {}
 
 	ngOnInit(): void {
-		let data = {
-			'email': 'testmail@gmail.com',
-			'username': 'testuser',
-			'password': 'passw1234',
-			'role': 'anmin'
-		}
 
-		// this.hashed_data = this.hash.encrypt_data(data);
-		// localStorage.setItem("info", this.hashed_data);
+		// -Encription-
+		// let data = {
+		// 	'email': 'testmail@gmail.com',
+		// 	'username': 'testuser',
+		// 	'password': 'passw1234',
+		// 	'role': 'anmin'
+		// }
+		// this.data = JSON.stringify(data);
+		// this.hashed_data = this.encryption.encrypt(data);
+		// this.normal_data = JSON.stringify(this.encryption.decrypt(this.hashed_data));
 
-		// this.normal_data = this.hash.decrypt_data(this.hashed_data);
 
-
+		// -API-
 		// this.http.Get('test').subscribe(data => {
 		// 	this.data = JSON.stringify(data);
 		// });
-		
 		// this.http.Post('test', {"name": "test7"}).subscribe(data => {
 		// 	this.data = JSON.stringify(data);
 		// });
-		
 		// this.http.Update('test', {"id":"1","name": "test01"}).subscribe(data => {
 		// 	this.data = JSON.stringify(data);
 		// });
-		
 		// this.http.Delate('test', {id: 1}).subscribe(data => {
 		// 	this.data = JSON.stringify(data);
 		// });
