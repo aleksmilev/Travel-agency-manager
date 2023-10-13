@@ -19,7 +19,7 @@ export class EncryptionService {
         return btoa(result);
     }
 
-    decrypt(encrypted_data: any): string {
+    decrypt(encrypted_data: any): any {
         encrypted_data = atob(encrypted_data);
 
         let result = '';
