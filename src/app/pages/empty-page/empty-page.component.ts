@@ -11,9 +11,9 @@ import { AuthGuard } from 'src/app/auth/auth.guard';
 })
 export class EmptyPageComponent implements OnInit {
 
-	data: any = null;
-	hashed_data: any = null;
-	normal_data: any = null;
+	// data: any = null;
+	// hashed_data: any = null;
+	// normal_data: any = null;
 
   	constructor(
 		private auth: AuthGuard,
@@ -23,6 +23,7 @@ export class EmptyPageComponent implements OnInit {
 
 	ngOnInit(): void {
 
+		
 		// -Access check-
 		// console.log(this.auth.access_check());
 

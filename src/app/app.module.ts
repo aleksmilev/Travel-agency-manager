@@ -12,11 +12,13 @@ import { NgSelectModule} from "@ng-select/ng-select";
 import { CKEditorModule} from "ng2-ckeditor";
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { EmptyPageComponent } from './pages/empty-page/empty-page.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmptyPageComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
