@@ -17,7 +17,7 @@ export class DataService{
 
   constructor(private http: HttpClient) {}
   
-  fullEndpoint(endpoint: string): string{
+  private fullEndpoint(endpoint: string): string{
     return this.REST_API_SERVER + endpoint;
   }
   

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { EncryptionService } from 'src/app/services/encryption.service';
+import { AuthGuard } from 'src/app/auth/auth.guard'; 
 
 @Component({
 	selector: 'app-empty-page',
@@ -14,11 +16,15 @@ export class EmptyPageComponent implements OnInit {
 	normal_data: any = null;
 
   	constructor(
+		private auth: AuthGuard,
+		private encryption: EncryptionService,
 		private http: DataService,
-		private encryption: EncryptionService
 		) {}
 
 	ngOnInit(): void {
+
+		// -Access check-
+		// console.log(this.auth.access_check());
 
 		// -Encription-
 		// let data = {
